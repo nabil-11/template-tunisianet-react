@@ -23,14 +23,14 @@ export const Navbar = () => {
                          <div className="float-xs-left">
               <div id="menu-icon">
               <div className="navbar-header">
-                  <button type="button" className="btn-navbar navbar-toggle" data-toggle="collapse" onclick="openNav()">
+                  <button type="button" className="btn-navbar navbar-toggle" data-toggle="collapse" onClick="openNav()">
                   <i className="fa fa-bars"></i></button>
               </div>
               </div>
               <div id="mySidenav" className="sidenav">
               <div className="close-nav">
                   <span className="categories">catégorie</span>
-                  <a href="" className="closebtn float-xs-right" onclick="closeNav()"><i className="fa fa-close"></i></a>
+                  <a href="" className="closebtn float-xs-right" onClick="closeNav()"><i className="fa fa-close"></i></a>
               </div>
               <div id="mobile_top_menu_wrapper" className="row hidden-lg-up">
                   <div className="js-top-menu mobile" id="_mobile_top_menu"></div>
@@ -80,7 +80,7 @@ export const Navbar = () => {
               
               <span role="status" aria-live="polite" className="ui-helper-hidden-accessible"></span><input className="search_query form-control ui-autocomplete-input" type="text" id="search_query_top" name="s" placeholder="Rechercher" value="" autocomplete="off"/>
               
-              <div id="wb_url_ajax_search" style="display:none">
+              <div id="wb_url_ajax_search" style={{display:'none' }}>
               <input type="hidden" value="https://www.tunisianet.com.tn/modules/wbblocksearch/controller_ajax_search.php" className="url_ajax"/>
               </div>
               <div id="sp-btn-search" className="input-group-btn">
@@ -97,7 +97,7 @@ export const Navbar = () => {
   <div data-toggle="dropdown" className="set">
     <svg width="28px" height="28px"> <use xlink:href="#setting"></use></svg>
   </div>
-  <ul className="dropdown-menu dropdown-menu-right se-do text-xs-left" style="display: none;">
+  <ul className="dropdown-menu dropdown-menu-right se-do text-xs-left" style={{display:'none'}}>
     <li className="wishl">
   <a id="headlink" href="https://www.tunisianet.com.tn/module/wbfeature/mywishlist">
           <svg width="18px" height="17px" className="nav-link"> <use xlink:href="#hwish"></use></svg> <span className="">Mes favoris</span>
